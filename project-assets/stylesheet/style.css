@@ -96,22 +96,24 @@ a {
 
 .hero-container {
     width: 100%;
-    height: 700px;
-    text-align: center;
-    padding: 3em 0;
+    height: 650px;
+    padding: 4em 0;
 }
 
 .hero-text-image {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 650px;
     width: 80%;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .content {
-    flex: 1;
+    width: 49%;
     text-align: left;
+    padding: 0 3em;
 }
 
 .content h1 {
@@ -149,26 +151,35 @@ a {
 }
 
 .image {
-    flex: 1;
-    display: inline-block;
-    width: 100%;
+    height: 650px;
+    width: 51%;
+    background-image: url(../images/hero-section/hero-image.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
+.card-1, .card-2 {
+    width: 180px;
+    height: 180px;
+}
+
 .card-1 {
-    width: 200px;
-    height: 200px;
+    align-self: flex-start;
 }
 
 .card-2 {
-    width: 200px;
-    height: 200px;
+    align-self: flex-end;
 }
 
-.hero {
+/* .hero {
     width: 100%;
     height: auto;
-}
+} */
 
 
 
@@ -206,6 +217,45 @@ a {
       h3 {
           font-size: 1.75em;
       }
+      .hero-text-image {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+      }
+
+      .content, .image {
+        width: 100%;
+        padding: 0 1em;
+        text-align: center;
+      }
+
+      .content h1 {
+        text-align: center;
+      }
+
+      .links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+      }
+
+      .links a {
+        padding: 0.5em;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+
+    .image {
+        height: auto;
+        margin-top: 2em;
+    }
+
+    .card-1, .card-2 {
+        width: 100px;
+        height: 100px;
+    }
   }
   
   @media (max-width: 480px) {
@@ -228,4 +278,21 @@ a {
       h3 {
           font-size: 1.5em;
       }
+
+      .content h1 {
+        font-size: 1.5em;
+    }
+
+    .content p {
+        font-size: 0.9em;
+    }
+
+    .links {
+        height: auto;
+    }
+
+    .card-1, .card-2 {
+        width: 80px;
+        height: 80px;
+    }
   }
