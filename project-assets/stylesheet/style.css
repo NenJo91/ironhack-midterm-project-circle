@@ -12,25 +12,24 @@ body {
     font-size: 20px;
     line-height: 1.6;
     font-weight: 300;
+    background-color: #F2F4FC;
 }
 
 h1, h2, h3 {
     font-family: Roboto Condensed, sans-serif;
+    text-align: center;
 }
 
 h1 {
   font-size: 3em;
-  text-align: center;
 }
 
 h2 {
-    font-size: 2.5em;
-    text-align: center;  
+    font-size: 2.5em;  
 }
 
 h3 {
     font-size: 2em;
-    text-align: center;
 }
 
 a {
@@ -96,27 +95,25 @@ a {
 
 .hero-container {
     width: 100%;
-    height: 650px;
     padding: 4em 0;
 }
 
 .hero-text-image {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 650px;
-    width: 80%;
+    width: 70vw;
     margin: auto;
-    flex-wrap: wrap;
 }
 
 .content {
-    width: 49%;
+    width: 46%;
     text-align: left;
-    padding: 0 3em;
+    padding: 3em 0;
 }
 
 .content h1 {
+   font-size: 3.5em;
    text-align: left;
    line-height: 1;
    color: #292E47;
@@ -151,35 +148,35 @@ a {
 }
 
 .image {
-    height: 650px;
-    width: 51%;
-    background-image: url(../images/hero-section/hero-image.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative;
+    width: 46%;
 }
 
-
-.card-1, .card-2 {
-    width: 180px;
-    height: 180px;
-}
+.hero {
+    width: 100%;
+} 
 
 .card-1 {
-    align-self: flex-start;
+  position: absolute;
+  left: -19%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  max-width: 57%;
 }
 
 .card-2 {
-    align-self: flex-end;
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -25%;
+  bottom: -22%;
+  max-width: 57%;
+  z-index: 999;
 }
 
-/* .hero {
-    width: 100%;
-    height: auto;
-} */
+
+
 
 
 
@@ -187,7 +184,7 @@ a {
   /* Media Queries */
   @media (max-width: 768px) {
       .navbar nav {
-          flex-direction: column;
+          flex-direction: row;
           align-items: flex-start;
       }
   
@@ -199,12 +196,12 @@ a {
       .menu a {
           padding: 0.5em 0;
       }
+      
   
-      .btn-blue {
-          margin-top: 1em;
-          width: 100%;
-          text-align: center;
+     header .btn-blue {
+        display: none;
       }
+
   
       h1 {
           font-size: 2.5em;
@@ -237,14 +234,12 @@ a {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: auto;
       }
 
       .links a {
         padding: 0.5em;
         width: 100%;
-        text-align: center;
-        margin-bottom: 0.5em;
+        margin-bottom: 0em;
     }
 
     .image {
