@@ -15,6 +15,10 @@ body {
     background-color: #F2F4FC;
 }
 
+p {
+    color: #6B708D;
+}
+
 h1, h2, h3 {
     font-family: Roboto Condensed, sans-serif;
     text-align: center;
@@ -70,7 +74,7 @@ a {
 .btn-blue {
     background-color: #072AC8;
     color: #fff;
-    font-family: Roberto Condensed;
+    font-family: Roboto Condensed;
     font-size: 1em;
     letter-spacing: 0.5px;
     text-align: center;
@@ -102,7 +106,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70vw;
+    width: 80%;
     margin: auto;
 }
 
@@ -120,7 +124,6 @@ a {
 }
 
 .content p {
-    color: #6B708D;
     padding: 2em 0;
     font-weight: 500;
 }
@@ -169,17 +172,45 @@ a {
   position: absolute;
   left: auto;
   top: auto;
-  right: -25%;
+  right: -15%;
   bottom: -22%;
   max-width: 57%;
   z-index: 999;
 }
 
+#client {
+    width: 100%;
+} 
+
+.client-logos {
+    display: flex;
+    height: 100%;
+    animation: slide 20s linear infinite;
+}
+
+.client-logos a {
+    display: flex;
+    width: 20vw;
+    flex-shrink: 0;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+}
 
 
+.client-logos img {
+   margin: 0 auto;
+   filter: grayscale(1);
+   width: 10rem;
+}
+.client-logos img:hover {
+    filter: grayscale(0);
+}
 
-
-
+@keyframes slide {
+    0% { transform: translateX(0); }
+	100% { transform: translateX(-140vw)}
+}
   
   /* Media Queries */
   @media (max-width: 768px) {
@@ -248,8 +279,27 @@ a {
     }
 
     .card-1, .card-2 {
-        width: 100px;
-        height: 100px;
+        display: none;
+    }
+
+    .client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    animation: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 2rem;
+    }
+
+    .client-logos img {
+        filter: grayscale(0);
+        width: 7rem;
+    }
+
+    #hide {
+        display: none;
     }
   }
   
@@ -287,7 +337,18 @@ a {
     }
 
     .card-1, .card-2 {
-        width: 80px;
-        height: 80px;
+       display: none;
+    }
+
+    .client-logos img {
+        width: 5rem;
+    }
+
+    .client-logos a {
+        width: 30vw;
+    }
+
+    #hide2 {
+        display: none;
     }
   }
