@@ -298,9 +298,7 @@ a {
         width: 7rem;
     }
 
-    #hide {
-        display: none;
-    }
+    
   }
   
   @media (max-width: 480px) {
@@ -346,9 +344,5 @@ a {
 
     .client-logos a {
         width: 30vw;
-    }
-
-    #hide2 {
-        display: none;
     }
   }
