@@ -5,20 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle web agency</title>
     <link rel="stylesheet" href="./project-assets/stylesheet/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script src="./project-assets/javascript/script.js" defer></script>
 </head>
 <body>
     <header id="navbar" class="navbar">
         <nav>
-            <!--Logo in the navbar-->
+        <!--Logo in the navbar-->
         <div class="logo">
         <a href="./index.html"> <img src="./project-assets/images/logos/circle.svg" alt="Circle Agency Logo" /></a></div>
         <!--Menu navigation-->
+        <div id="hamburger">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+        </label>
         <div class="menu">
-            <a href="">Home</a>
-            <a href="">Projects</a>
-            <a href="">Services</a>
+            <a href="./index.html">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Services</a>
         </div>
+        </div>          
         <!--Button as link in the navbar-->
         <div class="btn-blue">
         <a class="btn-blue" href="./contact.html">Contact us</a>

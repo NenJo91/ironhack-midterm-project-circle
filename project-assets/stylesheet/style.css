@@ -60,16 +60,19 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-}   
+   }
 
 .menu a {
+    display: block;
     padding: 0 1.5em;
     font-weight: 600;
 }
 
-.menu a:first-child {
-    color: #072AC8;
-}
+
+.checkbtn, #check {
+    display: none;
+   }
+
 
 .btn-blue {
     background-color: #072AC8;
@@ -93,9 +96,7 @@ a {
 .menu a:hover {
     color: #072AC8;
 }
-.menu a:first-child:hover {
-    color: #6B708D;
-}
+
 
 .hero-container {
     width: 100%;
@@ -214,75 +215,156 @@ a {
   
   /* Media Queries */
   @media (max-width: 768px) {
-      .navbar nav {
-          flex-direction: row;
-          align-items: flex-start;
+
+    .checkbtn {
+        display: flex;
+        font-size: 24px;
+        color: #292E47;
+    }
+
+    #check {
+        display: none;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px; /* Adjust based on navbar height */
+        right: 10px;
+        background-color: #292E47;
+        width: 20%
+        z-index: 1;
+    }
+
+
+    #check:checked ~ .menu {
+        display: flex;
+    }
+
+    #hamburger {
+        width: auto;
+    }
+
+/* .navbar nav {
+        flex-direction: row;
+        align-items: flex-start;
       }
   
-      .menu {
-          flex-direction: column;
-          align-items: flex-start;
+.menu {
+    flex-direction: column;
       }
   
-      .menu a {
-          padding: 0.5em 0;
+.menu a {
+        padding: 1em 0.5em;
+        font-size: 14px;
+        display: block;
       }
+
+#hamburger {
+    position: relative;
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#check {
+    display: none;
+    position: absolute;
+    inset: 0;
+    margin: auto; /* Show the checkbtn on mobile devices 
+  }
+
+#hamburger label {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbtn {
+        width: 15px;
+        height: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+
+.menu {
+    display: none;
+    flex-direction: column;
+  }
+
+#check:checked ~ .menu {
+    display: flex;
+  }  */
+
+
+
       
   
-     header .btn-blue {
+header .btn-blue {
         display: none;
       }
 
   
-      h1 {
-          font-size: 2.5em;
+h1 {
+    font-size: 2.5em;
       }
   
-      h2 {
-          font-size: 2em;
+h2 {
+    font-size: 2em;
       }
   
-      h3 {
-          font-size: 1.75em;
+h3 {
+    font-size: 1.75em;
       }
-      .hero-text-image {
+      
+.hero-text-image {
         flex-direction: column;
         align-items: center;
         height: auto;
       }
 
-      .content, .image {
+.content, .image {
         width: 100%;
         padding: 0 1em;
         text-align: center;
       }
 
-      .content h1 {
+.content h1 {
         text-align: center;
       }
 
-      .links {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+.links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
       }
 
-      .links a {
-        padding: 0.5em;
-        width: 100%;
-        margin-bottom: 0em;
+.links a {
+    padding: 0.5em;
+    width: 100%;
+    margin-bottom: 0em;
     }
 
-    .image {
-        height: auto;
-        margin-top: 2em;
+.image {
+    height: auto;
+    margin-top: 2em;
     }
 
-    .card-1, .card-2 {
+.card-1, .card-2 {
         display: none;
     }
 
-    .client-logos {
+.client-logos {
     display: flex;
     flex-wrap: wrap;
     width: 90vw;
@@ -293,56 +375,55 @@ a {
     gap: 2rem;
     }
 
-    .client-logos img {
+.client-logos img {
         filter: grayscale(0);
         width: 7rem;
     }
-
-    
-  }
+}
   
-  @media (max-width: 480px) {
-      body {
-          font-size: 18px;
+@media (max-width: 480px) {
+
+body {
+        font-size: 18px;
       }
   
-      .navbar nav {
+.navbar nav {
           width: 90%;
       }
   
-      h1 {
-          font-size: 2em;
+h1 {
+    font-size: 2em;
       }
   
-      h2 {
-          font-size: 1.75em;
+h2 {
+    font-size: 1.75em;
       }
   
-      h3 {
-          font-size: 1.5em;
+h3 {
+    font-size: 1.5em;
       }
 
-      .content h1 {
+.content h1 {
         font-size: 1.5em;
     }
 
-    .content p {
+.content p {
         font-size: 0.9em;
     }
 
-    .links {
+.links {
         height: auto;
     }
 
-    .card-1, .card-2 {
+.card-1, .card-2 {
        display: none;
     }
 
-    .client-logos img {
+.client-logos img {
         width: 5rem;
     }
 
-    .client-logos a {
+.client-logos a {
         width: 30vw;
     }
-  }
+}
