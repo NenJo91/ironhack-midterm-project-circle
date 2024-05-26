@@ -41,6 +41,7 @@ a {
     color: #6B708D;
     display: block;
 }
+
 .navbar {
     width: 100%;
     height: 3em;
@@ -216,105 +217,42 @@ a {
   /* Media Queries */
   @media (max-width: 768px) {
 
-    .checkbtn {
+.checkbtn {
         display: flex;
         font-size: 24px;
         color: #292E47;
     }
 
-    #check {
+#check {
         display: none;
         position: absolute;
         inset: 0;
         margin: auto;
     }
 
-    .menu {
+.menu {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 80px; /* Adjust based on navbar height */
         right: 10px;
         background-color: #292E47;
-        width: 20%
+        width: 20%;
         z-index: 1;
-    }
-
-
-    #check:checked ~ .menu {
-        display: flex;
-    }
-
-    #hamburger {
-        width: auto;
-    }
-
-/* .navbar nav {
-        flex-direction: row;
-        align-items: flex-start;
-      }
-  
-.menu {
-    flex-direction: column;
-      }
-  
-.menu a {
-        padding: 1em 0.5em;
-        font-size: 14px;
-        display: block;
-      }
-
-#hamburger {
-    position: relative;
-    height: 100%;
-    width: 15%;
-    display: flex;
-    flex-direction: column;
 }
-
-#check {
-    display: none;
-    position: absolute;
-    inset: 0;
-    margin: auto; /* Show the checkbtn on mobile devices 
-  }
-
-#hamburger label {
-    height: 100%;
-    width: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.checkbtn {
-        width: 15px;
-        height: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-}
-
-
-.menu {
-    display: none;
-    flex-direction: column;
-  }
 
 #check:checked ~ .menu {
-    display: flex;
-  }  */
+        display: flex;
+    }
 
-
-
-      
-  
+#hamburger {
+        width: auto;
+    }
+    
 header .btn-blue {
         display: none;
       }
 
-  
 h1 {
     font-size: 2.5em;
       }
@@ -377,11 +315,47 @@ h3 {
 
 .client-logos img {
         filter: grayscale(0);
-        width: 7rem;
+        width: 5rem;
     }
+
+#hide {
+    display: none;
+}
 }
   
 @media (max-width: 480px) {
+
+    .checkbtn {
+        display: flex;
+        font-size: 24px;
+        color: #292E47;
+    }
+
+#check {
+        display: none;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+    }
+
+.menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px; /* Adjust based on navbar height */
+        right: 10px;
+        background-color: #292E47;
+        width: 20%;
+        z-index: 1;
+}
+
+#check:checked ~ .menu {
+        display: flex;
+    }
+
+#hamburger {
+        width: auto;
+    }
 
 body {
         font-size: 18px;
@@ -418,12 +392,24 @@ h3 {
 .card-1, .card-2 {
        display: none;
     }
+    
+.client-logos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        animation: none;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 1rem;
+        }
 
 .client-logos img {
-        width: 5rem;
+    filter: grayscale(0);
+        width: 3rem;
     }
 
-.client-logos a {
-        width: 30vw;
-    }
+#hide {
+    display: none;
+}
 }
