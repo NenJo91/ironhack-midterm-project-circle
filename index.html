@@ -6,7 +6,7 @@
     <title>Circle web agency</title>
     <link rel="stylesheet" href="./project-assets/stylesheet/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <script src="./project-assets/javascript/script.js" defer></script>
+    <script src="./project-assets/javascript/index.js" defer></script>
 </head>
 <body>
     <header id="navbar" class="navbar">
@@ -35,7 +35,7 @@
     <main>
     <section id="hero" class="hero-container">
         <div class="hero-text-image">
-        <div class="content">
+        <div class="hero-content">
             <h1>Empower Your Business With Stunning Design!</h1>
             <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
             <div class="links">
@@ -66,11 +66,11 @@
             <a id="hide" href="https://www.amazon.com/" target="_blank"><img src="./project-assets/images/logos/amazon-logo.svg" alt="amazon-logo"></a>
         </div>
     </section>
-    <!-- <section id="projects">
+    <section id="projects">
         <div class="project-section">
             <h2>Recent Projects</h2>
             <div class="project-links">
-            <article>
+            <!--<article>
                 <img src="./project-assets/images/projects-section/1.jpg" alt="">
                 <h3>Simplify</h3>
                 <p>UI Design & App Development</p>
@@ -89,26 +89,32 @@
                 <a class="link-btn" href="">Learn More</a>
             </article>
             </div>
-        </div>
+        </div>-->
     </section>
-    <section id="testimonial">
+     <section id="testimonial">
+        <div class="testimonial">
         <div class="memojies">
-            <img src="./project-assets/images/testimonial-section/memoji-1.png" alt="">
-            <img src="./project-assets/images/testimonial-section/memoji-2.png" alt="">
-            <img src="./project-assets/images/testimonial-section/memoji-3.png" alt="">
-            <img src="./project-assets/images/testimonial-section/memoji-4.png" alt="">
+            <img class="memoji-1" src="./project-assets/images/testimonial-section/memoji-1.png" alt="">
+            <img class="memoji-2" src="./project-assets/images/testimonial-section/memoji-2.png" alt="">
+            <img class="memoji-3" src="./project-assets/images/testimonial-section/memoji-4.png" alt="">
+            <img class="memoji-4" src="./project-assets/images/testimonial-section/memoji-3.png" alt="">
         </div>
-        <div class="content">
+        <div class="memoji-content">
             <h2>Hear What our Clients Have to Say</h2>
-            <q>Circle helped us through every stage of our startup. We really enjoyed working with you.</q>
+            <q>Circle helped us through every stage of our startup. </br>  We really enjoyed working with you.</q>
             <div>
-                <img src="./project-assets/images/testimonial-section/profile.png" alt="">
-                <p>Kristin Watson</p> <br/>
-                <p>Booking.com</p>
+                <div class="profile">
+                <img src="./project-assets/images/testimonial-section/profile.png" alt="Picture from the author">
+                <div class="profile-info">
+                <p class="profile-name">Kristin Watson</p>
+                <p class="profile-company">Booking.com</p>
+                </div>
+                </div>
             </div>
         </div>
+        </div>
     </section>
-    <section id="services">
+    <!--<section id="services">
         <div>
             <h2>Our Services</h2>
             <div>
