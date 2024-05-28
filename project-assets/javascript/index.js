@@ -8,7 +8,7 @@ const getPosts = async () => {
         let cleanResponse = await response.json();
         let projectContainer = document.querySelector(".project-links");
     // lets a for of loop to keep things simple!
-    for (const project of cleanResponse.slice(0, 3)) {
+    for (const project of cleanResponse.slice(1, 4)) {
       console.log(project);
       let projectInfo = `
         <div class="project">
